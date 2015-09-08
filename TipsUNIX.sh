@@ -1,0 +1,50 @@
+Notes UNIX
+
+ls -l | wc -l
+ls | less
+find filename.wav	# find a file (grep finds a string in a .txt)
+
+ssh server ('exit' to disconnect)
+
+# extract unique labels
+cat *.lab | sed -e 's/.*\s//g' | sort | uniq -c | less
+cat file.blah | sed 's/old/new/g' > new.file.blah
+
+# read a txt file line-by-line (1)
+cat trn.lst | while read line; do
+	echo $line
+done
+
+# read a txt file line-by-line (2)
+for automobile in `cat cars.lst`; do
+	echo $automobile
+done
+
+
+# rotate screen
+xrandr --output VBOX1 --rotate right
+## !!!! gives error...... xrandr: output VBOX1 cannot use rotation "right" reflection "none"
+## > internet says:
+Adding the RandRRotation option in the Screen section of /etc/X11/xorg.conf allows rotation on my nvidia card.
+Section "Screen"
+    ...
+    Option "RandRRotation" "True"
+    ....
+
+
+
+# EER results by eye
+grep Error `find . -name 'DET-*.txt'` | grep nontar | perl -ane 'm/([0-9.]+) %/; print "$1 $_"' | sort -n | less
+
+
+# Firefox restore window form maximised
+Alt + Space + [select] # cf. http://www.shortcutworld.com/en/win/Firefox.html#link_8
+also, cf. http://askubuntu.com/questions/210962/window-controls-missing-cannot-maximise-or-minimize-applications
+& https://www.google.co.uk/search?channel=fs&q=ubuntu+firefox+window+size+can%27t+restore&cad=cbv&sei=qiS2VebUBoWnNom5gMgI
+
+# Ubuntu toolbar on side
+set toolbar on top by using GNOME Classic, instead of Ubuntu, @ log-in screen
+
+# tree structure of directories
+tree -hs -L 2
+du /* -h
