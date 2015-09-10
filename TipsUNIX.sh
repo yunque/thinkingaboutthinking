@@ -48,3 +48,10 @@ set toolbar on top by using GNOME Classic, instead of Ubuntu, @ log-in screen
 # tree structure of directories
 tree -hs -L 2
 du /* -h
+
+# PPA, cf. http://stackoverflow.com/questions/32350262/cmake-update-version-not-found
+# System Load Indicator application/widget
+@ https://launchpad.net/~indicator-multiload/+archive/ubuntu/stable-daily
+sudo apt-get repository ppa:indicator-multiload/stable-daily
+sudo apt-get update
+sudo apt-get install # [ stable-daily ///// indicator-multiload ] ???
