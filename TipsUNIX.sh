@@ -55,3 +55,31 @@ du /* -h
 sudo apt-get repository ppa:indicator-multiload/stable-daily
 sudo apt-get update
 sudo apt-get install # [ stable-daily ///// indicator-multiload ] ???
+
+
+# GDB
+# basix @ http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/
+# 1. Call a program with $ "gdb /path/to/program.c"
+# 2. Set breakpoints
+# 3. Run program with command line arguments w/ $ "run -m /path/to/model.bsm" etc
+
+# step into
+s
+
+# next
+n
+
+# set breakpoint
+b filename.ext:line#
+
+# delete breakpoint, cf. http://www.delorie.com/gnu/docs/gdb/gdb_32.html
+clear filename.ext:line#
+
+# print variable value
+p VAR
+
+# examine contents of address
+x 0x7FFFFFF
+
+# show current breakpoints
+info breakpoints
