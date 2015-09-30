@@ -57,6 +57,15 @@ sudo apt-get update
 sudo apt-get install # [ stable-daily ///// indicator-multiload ] ???
 
 
+# Search command history
+Ctrl+R
+# Keep searching
+Ctrl+R
+
+# Get length of string in bash
+len=${#string}
+
+
 # GDB
 # basix @ http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/
 # 1. Call a program with $ "gdb /path/to/program.c"
