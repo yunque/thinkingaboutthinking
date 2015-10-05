@@ -65,6 +65,10 @@ Ctrl+R
 # Get length of string in bash
 len=${#string}
 
+# Read file line-by-line
+while read line; do echo $line; done <file.lst 
+
+
 
 # GDB
 # basix @ http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/
