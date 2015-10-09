@@ -68,6 +68,10 @@ len=${#string}
 # Read file line-by-line
 while read line; do echo $line; done <file.lst 
 
+# Find the ARM GCC toolchain directory
+locate arm-none-eabi-gcc
+
+
 
 
 # GDB
