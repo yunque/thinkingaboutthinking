@@ -70,6 +70,7 @@ while read line; do echo $line; done <file.lst
 
 # Find the ARM GCC toolchain directory
 locate arm-none-eabi-gcc
+# e.g. @ /home/imr/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/
 
 
 
