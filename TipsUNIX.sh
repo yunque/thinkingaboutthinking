@@ -72,6 +72,9 @@ while read line; do echo $line; done <file.lst
 locate arm-none-eabi-gcc
 # e.g. @ /home/imr/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/
 
+# Location of assembler (as), linker(ld), etc.
+/usr/arm-linux-gnueabi/bin
+
 
 
 
