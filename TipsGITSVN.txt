@@ -1,7 +1,7 @@
 'GIT SVN'
 
 # basic commands
-$ git svn co <URL>
+$ git svn clone -rHEAD <URL>
 
 > [working-copy]
 $ git add
