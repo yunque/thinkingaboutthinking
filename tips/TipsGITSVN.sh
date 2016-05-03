@@ -27,6 +27,9 @@ find . -iname ".svn" -print0 | xargs -0 rm -r
 #...or...
 find . -name .svn -exec rm -r -f {} +
 
+# Tree visualisation of repo branches
+git log --graph --oneline --decorate --all
+
 # SYNCING A FORK
 # c.f. https://help.github.com/articles/syncing-a-fork/
 # 0.0. Configure a remote for a fork
