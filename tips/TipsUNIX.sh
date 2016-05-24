@@ -71,3 +71,13 @@ while read line; do echo $line; done <file.lst
 # copy a directory file structure (w/o copying contents)
 find . -type d >dirs.txt
 xargs mkdir -p <dirs.txt
+DIR_SRC=/path/to/source;
+DIR_DST=/path/to/dest;
+for d in `cat $DIR_DST/dirs.txt`; do
+	numwavs=`ls $DIR_SRC/$d/*.wav | wc -l`;
+	if [ $numwavs -gt 0 ]; then
+		for wpath in $DIR_SRC/$d/*.wav; do
+			echo "ln -s $wpath $DIR_DST/$d";
+		done;
+	fi;
+done;
