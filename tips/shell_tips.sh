@@ -22,3 +22,9 @@ sed -i -e 's/^/prefix2add/' file
 
 # sed create new file
 sed -i -e 's/^/prefix2add/' oldfile > newfile
+
+# delete lines in a file which contain a certain string
+sed -i.bak '/string2snipe/d' ./file2clean
+
+# logical OR
+if [ $a == 0 ] || [ $a == 1 ]; then echo $a; fi
