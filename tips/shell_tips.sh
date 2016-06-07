@@ -28,3 +28,6 @@ sed -i.bak '/string2snipe/d' ./file2clean
 
 # logical OR
 if [ $a == 0 ] || [ $a == 1 ]; then echo $a; fi
+
+# number of line in file, saved into a variable
+numlines=$(wc -l < file )
