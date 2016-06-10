@@ -31,3 +31,6 @@ if [ $a == 0 ] || [ $a == 1 ]; then echo $a; fi
 
 # number of line in file, saved into a variable
 numlines=$(wc -l < file )
+
+# remove first $n chars from a string $s
+${s:$n:${#s}}
