@@ -37,3 +37,6 @@ ${s:$n:${#s}}
 
 # find percentage value in files and order
 zgrep PercentageMetric `find . -name 'filenames*.ext'` | grep filter_string | perl -ane 'm/([0-9.]+) %/; print "$1 $_"' | sort -n | less
+
+# symlink file with a whitespace
+ln -s "/path/White Space.ext" .
