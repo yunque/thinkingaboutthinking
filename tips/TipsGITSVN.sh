@@ -15,6 +15,9 @@ git checkout -b dev/mybranchname
 #return to the master/root-of-branch
 git checkout master
 
+# show all branches (asterisk marks current branch)
+git branch
+
 #merge branch to master
 git merge dev/branchname '???'
 
