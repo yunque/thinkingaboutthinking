@@ -40,3 +40,7 @@ zgrep PercentageMetric `find . -name 'filenames*.ext'` | grep filter_string | pe
 
 # symlink file with a whitespace
 ln -s "/path/White Space.ext" .
+
+# find files from a given date
+date=1999-12-31
+for f in *ext; do if stat -c %y $f | grep $date; then echo $f; fi; done
