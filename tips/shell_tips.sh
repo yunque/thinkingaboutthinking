@@ -44,3 +44,6 @@ ln -s "/path/White Space.ext" .
 # find files from a given date
 date=1999-12-31
 for f in *ext; do if stat -c %y $f | grep $date; then echo $f; fi; done
+
+# date in YYYY-MM-DD format
+date +%Y-%m-%d
