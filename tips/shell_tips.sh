@@ -47,3 +47,8 @@ for f in *ext; do if stat -c %y $f | grep $date; then echo $f; fi; done
 
 # date in YYYY-MM-DD format
 date +%Y-%m-%d
+
+# trim end of string
+x=remove_last_word
+echo ${x%_*}
+>> remove_last
