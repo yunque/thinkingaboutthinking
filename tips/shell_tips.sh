@@ -35,6 +35,9 @@ numlines=$(wc -l < file )
 # remove first $n chars from a string $s
 ${s:$n:${#s}}
 
+# remove last $n chars from a string $s
+${s:0:${#s}-$n}
+
 # find evaluation metric in files and order
 zgrep <evaluation_metric> `find . -name 'filenames*.ext'` | grep <filter_string> | perl -ane 'm/([0-9.]+) %/; print "$1 $_"' | sort -n | less
 
