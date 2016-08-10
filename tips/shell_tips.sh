@@ -8,6 +8,12 @@ echo "$1 $2" | awk '{print int($1/$2)}'
 sed 's/_/ /g' <<< "el_stringo"
 # >> O/P: "el stringo"
 
+# remove constant string of x # of digits
+string='remove_123_digits'
+echo $string | sed 's/_[0-9][0-9][0-9]_/_/g'
+echo $string | sed 's/_[0-9]{3}_/_/g'
+>> remove_digits
+
 # replace newline with space
 tr '\n' ' ' < file.ext
 
