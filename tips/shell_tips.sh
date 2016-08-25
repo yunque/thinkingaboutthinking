@@ -61,3 +61,7 @@ date +%Y-%m-%d
 x=remove_last_word
 echo ${x%_*}
 >> remove_last
+
+# count # of ocurrences of a string in a file
+needles=`grep 'needle' $haystack | wc -l`;
+echo $needles $haystack;
