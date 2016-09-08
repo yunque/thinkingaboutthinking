@@ -1,2 +1,2 @@
 # thinkingaboutthinking
-Domain.
+Miscellaneous riff-raff.
