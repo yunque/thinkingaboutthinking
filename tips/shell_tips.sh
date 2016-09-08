@@ -65,3 +65,6 @@ echo ${x%_*}
 # count # of ocurrences of a string in a file
 needles=`grep 'needle' $haystack | wc -l`;
 echo $needles $haystack;
+
+# watch output of command change over time (-n1 => every second)
+watch -n1 "date"
