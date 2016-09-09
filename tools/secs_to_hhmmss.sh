@@ -3,8 +3,11 @@
 '''
 Given a total count of seconds, convert to HH:MM:SS
 
+BUGS:
+- If h=0 or m=0, currently fails with syntax error, because it relies on these
+  values to compute the next time unit.
+
 TODO:
-- Check if hours count is necessary, etc. (returns syntax error currently)
 - Calc milliseconds
 '''
 
