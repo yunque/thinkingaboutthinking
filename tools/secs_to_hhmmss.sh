@@ -2,6 +2,10 @@
 
 '''
 Given a total count of seconds, convert to HH:MM:SS
+
+TODO:
+- Check if hours count is necessary, etc. (returns syntax error currently)
+- Calc milliseconds
 '''
 
 # Input the total seconds
