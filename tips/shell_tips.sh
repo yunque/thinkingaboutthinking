@@ -68,3 +68,21 @@ echo $needles $haystack;
 
 # watch output of command change over time (-n1 => every second)
 watch -n1 "date"
+
+# count number of empty and non-empty text files (by line count)
+cnt_empty=0;
+cnt_nonempty=0;
+for d in *; do
+for f in $d/*evt; do
+  nlines=$(wc -l < $f);
+  if [ $nlines -eq 0 ]; then
+    cnt_empty=$((cnt_empty+1));
+  else $((cnt_nonempty+1));
+  fi;
+done;
+done;
+echo $cnt_empty;
+echo $cnt_nonempty
+
+# rename files with index in name (e.g. abc_000005_doremi)
+rename s/_00000[0-9]_/_/g $f; done
