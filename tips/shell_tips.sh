@@ -85,4 +85,7 @@ echo $cnt_empty;
 echo $cnt_nonempty
 
 # rename files with index in name (e.g. abc_000005_doremi)
-rename s/_00000[0-9]_/_/g $f; done
+rename s/_00000[0-9]_/_/g $f
+
+# Unique values in 3rd field
+for f in *ext; do cat $f | awk '{print $3}'; done | sort -u
