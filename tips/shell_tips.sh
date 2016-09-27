@@ -89,3 +89,6 @@ rename s/_00000[0-9]_/_/g $f
 
 # Unique values in 3rd field
 for f in *ext; do cat $f | awk '{print $3}'; done | sort -u
+
+# List all files without an extension
+ls --ignore='*.*'
