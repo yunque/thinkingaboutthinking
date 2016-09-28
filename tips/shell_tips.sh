@@ -92,3 +92,6 @@ for f in *ext; do cat $f | awk '{print $3}'; done | sort -u
 
 # List all files without an extension
 ls --ignore='*.*'
+
+# get destination path of symbolic link
+readlink $symlink
