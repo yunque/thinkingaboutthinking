@@ -98,3 +98,7 @@ readlink $symlink
 
 # Copy symlink, not destination of symlink
 cp -r $symlink .
+
+# Parse string by a delimiter and store in array
+IFS='/' read -ra ARR <<< "$str"
+echo ${ARR[-1]}
