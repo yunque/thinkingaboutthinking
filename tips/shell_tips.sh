@@ -102,3 +102,12 @@ cp -r $symlink .
 # Parse string by a delimiter and store in array
 IFS='/' read -ra ARR <<< "$str"
 echo ${ARR[-1]}
+
+# Follow symlinks down the rabbit hole and return
+# unique directories which contain the original files
+for f in *; do
+	while [[ -L $f ]]; do
+		f=$(readlink $f);
+	done;
+	dirname $f;
+done | sort -u;
