@@ -77,7 +77,8 @@ for f in $d/*evt; do
   nlines=$(wc -l < $f);
   if [ $nlines -eq 0 ]; then
     cnt_empty=$((cnt_empty+1));
-  else $((cnt_nonempty+1));
+  else 
+      cnt_nonempty=$((cnt_nonempty+1));
   fi;
 done;
 done;
