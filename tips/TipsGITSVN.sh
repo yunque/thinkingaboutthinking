@@ -50,3 +50,9 @@ git fetch upstream
 git checkout master
 # 1.3 Merge the upstream branch with my local master branch
 git merge upstream/master
+
+# See SVN URL for a git-svn repo
+less .git/config
+
+# See git-svn remote refs
+less .git/svn/refs/remotes/git-svn/
