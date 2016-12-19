@@ -56,3 +56,6 @@ less .git/config
 
 # See git-svn remote refs
 less .git/svn/refs/remotes/git-svn/
+
+# Make new folder in SVN repo
+svn mkdir <URL_of_existing_SVN_repo>/new_folder
