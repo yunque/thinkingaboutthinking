@@ -84,6 +84,8 @@ done;
 done;
 echo $cnt_empty;
 echo $cnt_nonempty
+# one-liner:
+cnt_empty=0; cnt_nonempty=0; for d in *; do for f in $d/*evt; do   nlines=$(wc -l < $f);   if [ $nlines -eq 0 ]; then     cnt_empty=$((cnt_empty+1));   else     cnt_nonempty=$((cnt_nonempty+1));   fi; done; done; echo $cnt_empty; echo $cnt_nonempty
 
 # rename files with index in name (e.g. abc_000005_doremi)
 rename s/_00000[0-9]_/_/g $f
@@ -115,3 +117,6 @@ done | sort -u;
 
 # Kill all threads running 'badprocess'
 ps -ef | grep badprocess | awk '{print $2}' | for f in `xargs $1`; do kill $f; done
+
+# Find all unique filetypes in a directory
+for f in *; do echo $f | rev | cut -d'.' -f1 | rev; done | sort -u
