@@ -120,3 +120,6 @@ ps -ef | grep badprocess | awk '{print $2}' | for f in `xargs $1`; do kill $f; d
 
 # Find all unique filetypes in a directory
 for f in *; do echo $f | rev | cut -d'.' -f1 | rev; done | sort -u
+
+# Replace space with underscore in filenames
+find -name "* *" -type f | rename 's/ /_/g'
