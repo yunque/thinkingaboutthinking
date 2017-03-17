@@ -123,3 +123,6 @@ for f in *; do echo $f | rev | cut -d'.' -f1 | rev; done | sort -u
 
 # Replace space with underscore in filenames
 find -name "* *" -type f | rename 's/ /_/g'
+
+# Search for a string in files of a certain format (e.g. .py)
+grep -rn "string" --include \*.py
