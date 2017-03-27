@@ -1,6 +1,6 @@
 'GIT SVN'
 
-# basic commands
+# Basic commands
 $ git svn clone -rHEAD <URL>
 
 > [working-copy]
@@ -9,16 +9,16 @@ $ git add
 $ git commit
 > [repo]
 
-# make a branch (from the master)
+# Make a branch (from the master)
 git checkout -b dev/mybranchname
 
-#return to the master/root-of-branch
+# Return to the master/root-of-branch
 git checkout master
 
-# show all branches (asterisk marks current branch)
+# Show all branches (asterisk marks current branch)
 git branch
 
-#merge branch to master
+# Merge branch to master
 git merge dev/branchname '???'
 
 git add -p ['hunk' aka line]
