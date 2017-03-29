@@ -62,3 +62,6 @@ svn mkdir <URL_of_existing_SVN_repo>/new_folder
 
 # Push a local branch to the remote origin (& track it)
 git push -u origin <branch>
+
+# Update only one file from a different branch
+git checkout <other_branch> -- <file_to_update.py>
