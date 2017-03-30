@@ -129,3 +129,6 @@ grep -rn "string" --include \*.py
 
 # See where tabs are in a script, cf. http://stackoverflow.com/a/8634745/5098023
 cat -A script.py
+
+# Diff contents of dirs
+diff -qr dir1 dir2 | sort
