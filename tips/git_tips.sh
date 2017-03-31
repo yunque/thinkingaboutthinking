@@ -74,3 +74,15 @@ git checkout <old_name>
 git branch -m <new_name>	# m => move
 git push origin :<old_name>	# delete old branch prepending with ':'
 git push origin <new_name>:refs/heads/<new_name>
+
+# Clone git repo on a remote server
+ssh user@remote
+# Generate new keypair for user on remote
+ssh-keygen -t rsa -b 4096 -C "<email>"
+# Add private key to ssh-agent (first start agent in background, then add)
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+# [ Copy public key to git/bitbucket settings
+#   cf. https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ ]
+# Clone via SSH (not HTTPS)
+git clone git@bitbucket.org:<repo_owner>/<repo_name>.git
