@@ -67,4 +67,10 @@ git push -u origin <branch>
 git checkout <other_branch> -- <file_to_update.py>
 
 # Remove all files that have been deleted with "rm" rather than "git rm"
-git ls-files --deleted -z | xargs -0 git rm 
+git ls-files --deleted -z | xargs -0 git rm
+
+# Rename a branch locally and push to remote w new name (deleting old name)
+git checkout <old_name> 
+git branch -m <new_name>	# m => move
+git push origin :<old_name>	# delete old branch prepending with ':'
+git push origin <new_name>:refs/heads/<new_name>
