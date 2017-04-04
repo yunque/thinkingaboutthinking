@@ -86,3 +86,6 @@ ssh-add ~/.ssh/id_rsa
 #   cf. https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ ]
 # Clone via SSH (not HTTPS)
 git clone git@bitbucket.org:<repo_owner>/<repo_name>.git
+
+# Get info about remote repo
+git remote show origin
