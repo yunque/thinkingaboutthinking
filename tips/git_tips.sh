@@ -74,6 +74,9 @@ git checkout <old_name>
 git branch -m <new_name>	# m => move
 git push origin :<old_name>	# delete old branch prepending with ':'
 git push origin <new_name>:refs/heads/<new_name>
+# ...and reset the upstream branch name
+git branch --unset-upstream
+git branch --set-upstream-to=origin/<new_name>
 
 # Clone git repo on a remote server
 ssh user@remote
