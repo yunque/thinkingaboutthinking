@@ -106,3 +106,6 @@ git count-objects -v
 
 # Garbage collection
 git gc
+
+# Prune loose garbage
+git prune
