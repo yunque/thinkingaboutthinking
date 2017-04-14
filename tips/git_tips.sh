@@ -92,3 +92,7 @@ git clone git@bitbucket.org:<repo_owner>/<repo_name>.git
 
 # Get info about remote repo
 git remote show origin
+
+# Search for deleted file in git history
+git log --all --full-history -- **/file.*	# if path unknown
+git log --all --full-history -- /path/to/file	# if path known
