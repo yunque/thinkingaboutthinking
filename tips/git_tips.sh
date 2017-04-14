@@ -109,3 +109,6 @@ git gc
 
 # Prune loose garbage
 git prune
+
+# Repack (pack == history), clearing garbage in the history
+git repack -Ad
