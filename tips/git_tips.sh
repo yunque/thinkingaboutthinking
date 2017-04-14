@@ -97,5 +97,9 @@ git remote show origin
 git log --all --full-history -- **/file.*	# if path unknown
 git log --all --full-history -- /path/to/file	# if path known
 
+# Verify validity and connectivity of objects
+# (Shows dangling blobs and dangling commits)
+git fsck
+
 # Garbage collection
 git gc
