@@ -96,3 +96,6 @@ git remote show origin
 # Search for deleted file in git history
 git log --all --full-history -- **/file.*	# if path unknown
 git log --all --full-history -- /path/to/file	# if path known
+
+# Garbage collection
+git gc
