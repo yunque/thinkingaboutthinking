@@ -101,5 +101,8 @@ git log --all --full-history -- /path/to/file	# if path known
 # (Shows dangling blobs and dangling commits)
 git fsck
 
+# Find garbage and see stats e.g. pack(s) size
+git count-objects -v
+
 # Garbage collection
 git gc
