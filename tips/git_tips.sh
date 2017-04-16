@@ -112,3 +112,7 @@ git prune
 
 # Repack (pack == history), clearing garbage in the history
 git repack -Ad
+
+# Diff, only show file name, or also include diff-status
+git diff --name-only
+git diff --name-status
