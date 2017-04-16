@@ -116,3 +116,6 @@ git repack -Ad
 # Diff, only show file name, or also include diff-status
 git diff --name-only
 git diff --name-status
+
+# See git stash without applying it
+git stash show -p
