@@ -65,6 +65,8 @@ git push -u origin <branch>
 
 # Update only one file from a different branch
 git checkout <other_branch> -- <file_to_update.py>
+# Revert a specific file to a specific commit
+git checkout <commit_hash> <file>
 
 # Remove all files that have been deleted with "rm" rather than "git rm"
 git ls-files --deleted -z | xargs -0 git rm
