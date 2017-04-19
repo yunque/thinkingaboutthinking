@@ -1,6 +1,4 @@
-'GIT SVN'
-
-# Basic commands
+# Local git clone of svn repo
 $ git svn clone -rHEAD <URL>
 
 > [working-copy]
@@ -23,7 +21,8 @@ git merge dev/branchname '???'
 
 git add -p ['hunk' aka line]
 
-git diff --cached '=> diff staging area vs repo'
+# Diff b/w staging area vs upstream repo
+git diff --cached
 
 # Remove .svn files
 find . -iname ".svn" -print0 | xargs -0 rm -r
