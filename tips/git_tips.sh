@@ -16,8 +16,9 @@ git checkout master
 # Show all branches (asterisk marks current branch)
 git branch
 
-# Merge branch to master
-git merge dev/branchname '???'
+# Merge branch into master
+git checkout master
+git merge branch
 
 git add -p ['hunk' aka line]
 
