@@ -16,8 +16,10 @@ git checkout -b dev/mybranchname
 # Return to the master/root-of-branch
 git checkout master
 
-# Show all branches (asterisk marks current branch)
+# Show all local branches (asterisk marks current branch)
 git branch
+# Show all remote branches
+git branch -r
 
 # Merge branch into master
 git checkout master
