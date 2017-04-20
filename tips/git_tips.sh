@@ -123,3 +123,9 @@ git diff --name-status
 
 # See git stash without applying it
 git stash show -p
+
+# Reattach detached HEAD
+# (First create a temporary branch onto which to attach the HEAD)
+git checkout -b temp_branch
+# (Then merge the temporary branch to the relevant existing branch)
+git checkout -B target_branch temp_branch
