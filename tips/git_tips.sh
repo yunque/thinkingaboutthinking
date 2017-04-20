@@ -129,3 +129,5 @@ git stash show -p
 git checkout -b temp_branch
 # (Then merge the temporary branch to the relevant existing branch)
 git checkout -B target_branch temp_branch
+# (Finally, optionally delete the temporary branch)
+git branch -d temp_branch
