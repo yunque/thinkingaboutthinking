@@ -7,6 +7,9 @@ $ git add
 $ git commit
 > [repo]
 
+# Amend commit message (if unpushed)
+git commit --amend
+
 # Make a branch (from the master)
 git checkout -b dev/mybranchname
 
