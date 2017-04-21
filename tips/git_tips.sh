@@ -111,6 +111,13 @@ git log -- <file>		# commit msg only
 git log --patch -- <file>	# commit msg and diff
 git log --all -- <file>		# Across all branches
 
+# See changes to file by commit/author/date
+git blame <file>
+# ...between specific lines
+git blame -L <start>,<end> <file>
+# ...withinn a specific function in the source
+git blame -L:<function> <file>
+
 # Verify validity and connectivity of objects
 # (Shows dangling blobs and dangling commits)
 git fsck
