@@ -124,6 +124,11 @@ git gc
 # Prune loose garbage
 git prune
 
+# Remove untracked files from the working tree
+git clean
+# Remove untracked directories "
+git clean -d
+
 # Repack (pack == history), clearing garbage in the history
 git repack -Ad
 
