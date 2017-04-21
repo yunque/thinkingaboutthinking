@@ -106,6 +106,10 @@ git remote show origin
 git log --all --full-history -- **/file.*	# if path unknown
 git log --all --full-history -- /path/to/file	# if path known
 
+# Search for all committed changes to a file
+git log -- <file>		# commit msg only
+git log --patch -- <file>	# commit msg and diff
+
 # Verify validity and connectivity of objects
 # (Shows dangling blobs and dangling commits)
 git fsck
