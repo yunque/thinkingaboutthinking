@@ -109,6 +109,7 @@ git log --all --full-history -- /path/to/file	# if path known
 # Search for all committed changes to a file
 git log -- <file>		# commit msg only
 git log --patch -- <file>	# commit msg and diff
+git log --all -- <file>		# Across all branches
 
 # Verify validity and connectivity of objects
 # (Shows dangling blobs and dangling commits)
