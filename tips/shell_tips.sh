@@ -70,6 +70,9 @@ echo $needles $haystack;
 # Watch output of command change over time (-n1 => every second)
 watch -n1 "date"
 
+# Watch/follow the tail of a log file
+tail -f -n40 <log>
+
 # Count number of empty and non-empty text files (by line count)
 cnt_empty=0;
 cnt_nonempty=0;
