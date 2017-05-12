@@ -136,3 +136,6 @@ cat -A script.py
 
 # Diff contents of dirs
 diff -qr dir1 dir2 | sort
+
+# Power off external drive for safe removal
+udiskctl power-off -b </dev/sdb1>
