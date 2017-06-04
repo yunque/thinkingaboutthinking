@@ -1,8 +1,5 @@
-# Ceil division @ awk
-echo "$1 $2" | awk '{print ($1+$2-1)/$2}'
-
-# Floor division @ awk
-echo "$1 $2" | awk '{print int($1/$2)}'
+# Float division
+echo "2/3" | bc -l
 
 # Edit a string with sed
 sed 's/_/ /g' <<< 'el_stringo'
