@@ -135,4 +135,9 @@ cat -A script.py
 diff -qr dir1 dir2 | sort
 
 # Power off external drive for safe removal
-udiskctl power-off -b </dev/sdb1>
+iudiskctl power-off -b </dev/sdb1>
+
+# Search command history
+Ctrl+R
+# Keep searching
+Ctrl+R
