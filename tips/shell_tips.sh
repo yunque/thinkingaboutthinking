@@ -141,3 +141,10 @@ iudiskctl power-off -b </dev/sdb1>
 Ctrl+R
 # Keep searching
 Ctrl+R
+
+# Directory structure
+tree
+# ...limited to N levels
+tree -L N
+# ...w file size
+tree -hs
