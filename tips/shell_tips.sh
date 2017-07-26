@@ -148,3 +148,6 @@ tree
 tree -L N
 # ...w file size
 tree -hs
+
+# Human-readable filesize (MB)
+ls -l --block-size=MB <file>
