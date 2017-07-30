@@ -45,7 +45,7 @@ ${s:0:${#s}-$n}
 # Find evaluation metric in files and order
 zgrep <evaluation_metric> `find . -name 'filenames*.ext'` | grep <filter_string> | perl -ane 'm/([0-9.]+) %/; print "$1 $_"' | sort -n | less
 
-# Symlink file with a whitespace
+# Symlink file with a whitespace (treat as string)
 ln -s "/path/White Space.ext" .
 
 # Find files from a given date
