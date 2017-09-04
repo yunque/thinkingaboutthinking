@@ -151,3 +151,6 @@ tree -hs
 
 # Human-readable filesize (MB)
 ls -l --block-size=MB <file>
+
+# Install .deb package
+sudo dpkg -i <.deb>
