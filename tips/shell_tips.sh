@@ -154,3 +154,6 @@ ls -l --block-size=MB <file>
 
 # Install .deb package
 sudo dpkg -i <.deb>
+
+# Search for Ubuntu package
+apt-cache search <keyword>
