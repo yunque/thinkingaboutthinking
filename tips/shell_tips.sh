@@ -157,3 +157,10 @@ sudo dpkg -i <.deb>
 
 # Search for Ubuntu package
 apt-cache search <keyword>
+
+# Uncompress a gzipped tarball
+tar xvzf <file>.tar.gz
+# x = extract
+# v = verbose, list all files
+# z = uncompress
+# f = file
