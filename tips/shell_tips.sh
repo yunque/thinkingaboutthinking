@@ -164,3 +164,7 @@ tar xvzf <file>.tar.gz
 # v = verbose, list all files
 # z = uncompress
 # f = file
+
+# Unique entries in a CSV column
+cut -d',' -fX <file>.csv | sort -u
+# (where X = column index)
