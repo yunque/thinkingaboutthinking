@@ -166,5 +166,13 @@ tar xvzf <file>.tar.gz
 # f = file
 
 # Unique entries in a CSV column
-cut -d',' -fX <file>.csv | sort -u
-# (where X = column index)
+cut -d',' -f$X <file>.csv | sort -u
+# (where $X=column index)
+
+# Tokenize a string
+string="abc 123 doremi"
+IFS=' ' tokens=($string)
+# Return all tokens
+echo ${tokens[*]}
+# Return last token
+echo ${tokens[-1]}
