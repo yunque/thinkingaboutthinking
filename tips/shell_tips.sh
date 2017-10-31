@@ -190,3 +190,9 @@ for (( i=0; i<${#string}; i++ )); do
   # Expand the substring starting from position $i, for one character (1)
   echo "${nonalpha:$i:1}"; 
 done | sort -u
+
+# Extract dirname, filename and extension from a filepath
+# NB. "" handles spaces
+dirname=`dirname "$f"`
+ext=`basename ${f##*.}`
+fname=`basename "$f" .$ext`
