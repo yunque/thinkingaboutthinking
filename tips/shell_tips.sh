@@ -176,3 +176,9 @@ IFS=' ' tokens=($string)
 echo ${tokens[*]}
 # Return last token
 echo ${tokens[-1]}
+
+# List unique characters in a string
+for (( i=0; i<${#string}; i++ )); do
+  # Expand the substring starting from position $i, for one character (1)
+  echo "${string:$i:1}"; 
+done | sort -u
