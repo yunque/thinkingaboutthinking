@@ -182,3 +182,11 @@ for (( i=0; i<${#string}; i++ )); do
   # Expand the substring starting from position $i, for one character (1)
   echo "${string:$i:1}"; 
 done | sort -u
+
+# List unique non-alphanumeric characters in a string
+for (( i=0; i<${#string}; i++ )); do
+  # Remove alphanumeric characters
+  nonalpha=`sed 's/[A-Z|a-z|0-9]//g' <<< $string`;
+  # Expand the substring starting from position $i, for one character (1)
+  echo "${nonalpha:$i:1}"; 
+done | sort -u
