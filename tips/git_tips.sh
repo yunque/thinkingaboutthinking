@@ -153,3 +153,7 @@ git checkout -b temp_branch
 git checkout -B target_branch temp_branch
 # (Finally, optionally delete the temporary branch)
 git branch -d temp_branch
+
+# Exclude a file type (e.g. *.csv) from an operation (e.g. diff)
+git diff -- . ':!*.csv'
+# NB. this is called "pathspec magic"
