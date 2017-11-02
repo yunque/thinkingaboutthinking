@@ -157,3 +157,8 @@ git branch -d temp_branch
 # Exclude a file type (e.g. *.csv) from an operation (e.g. diff)
 git diff -- . ':!*.csv'
 # NB. this is called "pathspec magic"
+
+# Conflict resolution: accept pulled version entirely, discard HEAD version
+git checkout --theirs -- <filename>
+# vice-versa
+git checkout --ours -- <filename>
