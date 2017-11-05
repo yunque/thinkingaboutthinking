@@ -25,6 +25,9 @@ git branch -r
 git checkout master
 git merge branch
 
+# Merge no fast-forward (keeps branch after merging)
+git merge --no-ff
+
 git add -p ['hunk' aka line]
 
 # Diff b/w staging area vs upstream repo
