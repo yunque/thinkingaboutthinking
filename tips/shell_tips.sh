@@ -203,3 +203,6 @@ while read line; do
   echo $line
   ((i++))
 done < $file
+
+# Append to same line of file (-n excludes newline)
+echo -n "text" >> $file
