@@ -196,3 +196,10 @@ done | sort -u
 dirname=`dirname "$f"`
 ext=`basename ${f##*.}`
 fname=`basename "$f" .$ext`
+
+# Read file line-by-line
+i=1
+while read line; do
+  echo $line
+  ((i++))
+done < $file
