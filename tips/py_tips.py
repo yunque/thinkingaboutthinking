@@ -56,8 +56,10 @@ import os
 print os.listdir(<directory_path>)
 
 
-''' Initialize empty dictionary of lists '''
+''' Initialize empty dictionary '''
 keys = ['k1', 'k2', 'k3']
+d = dict.fromkeys(keys)
+# Initialize values to empty lists
 d = dict.fromkeys(keys, [])
 
 
