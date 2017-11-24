@@ -206,3 +206,6 @@ done < $file
 
 # Append to same line of file (-n excludes newline)
 echo -n "text" >> $file
+
+# Find files created/edited in the last 24 hours
+find . -maxdepth 3 -mtime -1 -type f
