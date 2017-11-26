@@ -165,3 +165,6 @@ git diff -- . ':!*.csv'
 git checkout --theirs -- <filename>
 # vice-versa
 git checkout --ours -- <filename>
+
+# Amend/edit a commit message
+git commit --amend
