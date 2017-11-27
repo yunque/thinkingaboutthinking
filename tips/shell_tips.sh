@@ -209,3 +209,11 @@ echo -n "text" >> $file
 
 # Find files created/edited in the last 24 hours
 find . -maxdepth 3 -mtime -1 -type f
+
+# Time a function
+echo "Starting @" `date`;
+tic=$SECONDS;
+sleep 1;
+toc=$SECONDS;
+echo "Ending @ " `date`;
+echo "Time elapsed:" $((toc-tic)) "secs"
