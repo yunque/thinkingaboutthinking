@@ -217,3 +217,6 @@ sleep 1;
 toc=$SECONDS;
 echo "Ending @ " `date`;
 echo "Time elapsed:" $((toc-tic)) "secs"
+
+# Write stdout and stderr to log file (and print to std out)
+script.sh 2>&1 | tee -a log.txt
