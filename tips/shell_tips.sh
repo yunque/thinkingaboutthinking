@@ -102,6 +102,7 @@ readlink $symlink
 
 # Copy symlink, not destination of symlink
 cp -P $symlink .
+cp -d $symlink .
 
 # Parse string by a delimiter and store in array
 IFS='/' read -ra ARR <<< "$str"
