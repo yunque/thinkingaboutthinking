@@ -221,3 +221,6 @@ echo "Time elapsed:" $((toc-tic)) "secs"
 
 # Write stdout and stderr to log file (and print to std out)
 script.sh 2>&1 | tee -a log.txt
+
+# Print file ignoring header (start reading from line 2)
+tail -n +2 $file
