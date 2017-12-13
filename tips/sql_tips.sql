@@ -26,6 +26,7 @@ ORDER BY
 
 
 -- Size of all materialized views
+-- cf. https://dba.stackexchange.com/questions/96534/postgres-check-disk-space-taken-by-materialized-view#96540
 SELECT
   relname   AS objectname
 , relkind   AS objecttype
@@ -42,3 +43,10 @@ ORDER BY
 -- Query plan + planning/execution time
 EXPLAIN ANALYZE
 <QUERY>
+
+-- Export/copy table to file
+-- SQL
+COPY schema.table TO 'file_name'
+-- psql
+\copy schema.table to 'file_name' csv;
+-- NB. In SQL, must be superuser, but not in psql shell
