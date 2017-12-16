@@ -168,3 +168,8 @@ git checkout --ours -- <filename>
 
 # Amend/edit a commit message
 git commit --amend
+
+# Fetch a new branch from upstream
+git fetch --all
+# NB. new branch will not show after `git branch`
+git checkout new_branch
