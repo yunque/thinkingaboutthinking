@@ -227,3 +227,6 @@ tail -n +2 $file
 
 # Delete lines from a text file
 sed -i.bak '/pattern to match/d' $f
+
+# Add a header to a file
+sed -i 'i1Header,Text' $f
