@@ -224,3 +224,6 @@ script.sh 2>&1 | tee -a log.txt
 
 # Print file ignoring header (start reading from line 2)
 tail -n +2 $file
+
+# Delete lines from a text file
+sed -i.bak '/pattern to match/d' $f
