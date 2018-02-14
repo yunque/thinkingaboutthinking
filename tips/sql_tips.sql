@@ -1,3 +1,6 @@
+-- Define table schema from a CSV
+head -n100 $csv | csvsql -i postgresql
+
 -- Retrieve a table's colums names
 SELECT
   column_name
