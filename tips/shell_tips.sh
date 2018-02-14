@@ -229,4 +229,4 @@ tail -n +2 $file
 sed -i.bak '/pattern to match/d' $f
 
 # Add a header to a file
-sed -i 'i1Header,Text' $f
+sed -i i1'Header,Text' $f
