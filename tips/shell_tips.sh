@@ -233,3 +233,6 @@ sed -i i1'Header,Text' $f
 
 # Remove carriage return (^M)
 sed -i 's/\r//g' $f
+
+# View a CSV file in tab-separated table format
+column -s, -t < file.csv | less -#2 -N -S
