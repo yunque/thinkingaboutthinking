@@ -26,3 +26,15 @@ N
 :%s/<old>/<new>/g
 # replace all <old> with <new> in file, with confirmation
 :%s/<old>/<new>/gc
+
+
+# VISUAL MODE (MARKING TEXT)
+# mark characters/lines by advancing cursor
+v
+V
+# shift marked text right/left
+>
+<
+# " by shiftwidth
+>>
+<<
