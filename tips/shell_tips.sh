@@ -239,4 +239,8 @@ column -s, -t < file.csv | less -#2 -N -S
 
 # JSON inspection with colouring
 cat file.json | jq ''
-# NB. (requires the jq package)
+# NB. (requires the jq package [Linux])
+
+# Syntax colour a file preview (similar to cat, with colour)
+pygmentize -g file.json
+# NB. (requires the pygments package [Python])
