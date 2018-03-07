@@ -236,3 +236,7 @@ sed -i 's/\r//g' $f
 
 # View a CSV file in tab-separated table format
 column -s, -t < file.csv | less -#2 -N -S
+
+# JSON inspection with colouring
+cat file.json | jq ''
+# NB. (requires the jq package)
