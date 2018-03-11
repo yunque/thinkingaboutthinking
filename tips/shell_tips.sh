@@ -119,6 +119,8 @@ done | sort -u;
 
 # Kill all threads running 'badprocess'
 ps -ef | grep badprocess | awk '{print $2}' | for f in `xargs $1`; do kill $f; done
+# ...or...
+for pid in $(ps -ef | awk '/badprocess/ {print $2}'); do kill -9 $pid; done
 
 # Find all unique filetypes in a directory
 for f in *; do echo $f | rev | cut -d'.' -f1 | rev; done | sort -u
