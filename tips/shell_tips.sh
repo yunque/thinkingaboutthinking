@@ -246,3 +246,6 @@ cat file.json | jq ''
 # Syntax colour a file preview (similar to cat, with colour)
 pygmentize -g file.json
 # NB. (requires the pygments package [Python])
+
+# Path of directory containing script being run
+$(dirname $(realpath $0))
