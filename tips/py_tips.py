@@ -51,6 +51,18 @@ with open(fpath, 'r') as fp:
     reader = csv.DictReader(fp)
     fieldnames = reader.fieldnames
 
+
+''' Unpack a dictionary '''
+# 2.x
+d = {}
+for k,v in d.iteritems():
+	print(k,v)
+# 3.x
+d = {}
+for k,v in d.items():
+    print(k,v)
+
+
 ''' List files in directory '''
 import os
 print os.listdir(<directory_path>)
