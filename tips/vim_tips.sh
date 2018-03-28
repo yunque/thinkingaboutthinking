@@ -32,9 +32,13 @@ N
 # mark characters/lines by advancing cursor
 v
 V
+# visual block
+Ctrl + v
 # shift marked text right/left
 >
 <
-# " by shiftwidth
+# " by shiftwidth (set in ~/.vimrc)
 >>
 <<
+# Indent 10 lines
+10>>
