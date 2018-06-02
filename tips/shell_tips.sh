@@ -249,3 +249,12 @@ pygmentize -g file.json
 
 # Path of directory containing script being run
 $(dirname $(realpath $0))
+
+# See hostname (aka name of machine)
+uname -n
+# or
+hostname
+
+# Change hostname
+hostnamectl set-hostname <new_hostname>
+
