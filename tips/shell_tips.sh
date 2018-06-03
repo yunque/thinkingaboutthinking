@@ -258,3 +258,5 @@ hostname
 # Change hostname
 hostnamectl set-hostname <new_hostname>
 
+# Change directory ownership
+sudo chown -R username:group directory
