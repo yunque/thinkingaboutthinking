@@ -260,3 +260,13 @@ hostnamectl set-hostname <new_hostname>
 
 # Change directory ownership
 sudo chown -R username:group directory
+
+# Get user's id and groups
+id <user>
+# Groups
+id -G <user>
+
+# List all system groups
+groups
+# List all system groups that <user> belongs to
+groups <user>
