@@ -281,3 +281,7 @@ usermod -G <group> <user>
 # cf. https://unix.stackexchange.com/a/230426/188678
 groupadd <newuser>
 usermod -d /home/<newuser> -m -g <newuser> -l <newuser> <olduser>
+
+# Set file access control list (user privileges for a file or dir)
+sudo su
+setfacl -m u:<user>:rwx <file/dir>
