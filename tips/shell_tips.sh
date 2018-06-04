@@ -261,6 +261,9 @@ hostnamectl set-hostname <new_hostname>
 # Change directory ownership
 sudo chown -R username:group directory
 
+# List all users
+getent passwd | cut -d':' -f1
+
 # Get user's id and groups
 id <user>
 # Groups
