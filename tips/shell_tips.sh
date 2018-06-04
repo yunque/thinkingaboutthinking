@@ -273,3 +273,11 @@ id -G <user>
 groups
 # List all system groups that <user> belongs to
 groups <user>
+
+# Add <user> to <group>
+usermod -G <group> <user>
+
+# Rename a user
+# cf. https://unix.stackexchange.com/a/230426/188678
+groupadd <newuser>
+usermod -d /home/<newuser> -m -g <newuser> -l <newuser> <olduser>
