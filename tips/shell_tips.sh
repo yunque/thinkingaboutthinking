@@ -273,6 +273,8 @@ id -G <user>
 groups
 # List all system groups that <user> belongs to
 groups <user>
+# List all users in <group>
+getent group <group>
 
 # Add <user> to <group>
 usermod -G <group> <user>
