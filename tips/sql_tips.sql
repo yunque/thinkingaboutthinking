@@ -11,6 +11,8 @@ WHERE
   AND
   table_name   = 'tablen'
 
+-- Size of a database
+SELECT pg_size_pretty(pg_database_size('<database>'));
 
 -- Size of table (MB)
 SELECT pg_size_pretty(pg_total_relation_size('"scheman"."tablen"'));
