@@ -263,6 +263,8 @@ sudo chown -R username:group directory
 
 # List all users
 getent passwd | cut -d':' -f1
+# or
+cat /etc/passwd | cut -d: -f1
 
 # Get user's id and groups
 id <user>
