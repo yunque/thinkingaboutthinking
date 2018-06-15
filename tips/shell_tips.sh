@@ -289,3 +289,6 @@ usermod -d /home/<newuser> -m -g <newuser> -l <newuser> <olduser>
 # Set file access control list (user privileges for a file or dir)
 sudo su
 setfacl -m u:<user>:rwx <file/dir>
+
+# Exit code of last executed command (e.g. to check fsck error code)
+echo $?
