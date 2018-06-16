@@ -292,3 +292,6 @@ setfacl -m u:<user>:rwx <file/dir>
 
 # Exit code of last executed command (e.g. to check fsck error code)
 echo $?
+
+# List system hardware devices
+lshw
