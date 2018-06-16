@@ -295,3 +295,6 @@ echo $?
 
 # List system hardware devices
 lshw
+
+# List files by timestamp (reverse)
+ls -ltr
