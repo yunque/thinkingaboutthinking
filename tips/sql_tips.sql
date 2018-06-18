@@ -55,3 +55,7 @@ COPY schema.table TO 'file_name'
 -- psql
 \copy schema.table to 'file_name' csv;
 -- NB. In SQL, must be superuser, but not in psql shell
+
+
+-- Change table owner
+ALTER TABLE <table> OWNER TO <new_owner>;
