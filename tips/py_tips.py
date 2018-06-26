@@ -104,3 +104,7 @@ df['col'].unique()
 df.drop_duplicates()
 # DataFrames (distinct entries in a specific column)
 df.drop_duplicates(subset='col', keep='first')
+
+
+# List conda environments
+conda info --envs
