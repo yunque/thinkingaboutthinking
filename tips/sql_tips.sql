@@ -59,3 +59,6 @@ COPY schema.table TO 'file_name'
 
 -- Change table owner
 ALTER TABLE <table> OWNER TO <new_owner>;
+
+-- Dump DB from one server to another
+pg_dump -h host1 dbname | psql -h host2 dbname
