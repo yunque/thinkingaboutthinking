@@ -62,3 +62,17 @@ ALTER TABLE <table> OWNER TO <new_owner>;
 
 -- Dump DB from one server to another
 pg_dump -h host1 dbname | psql -h host2 dbname
+
+-- Check status of running queries
+SELECT
+	query_start
+	,state_change
+	,query
+	,state
+FROM
+	pg_stat_activity
+WHERE
+	usename = '<username>'
+	AND
+	datname = '<database>';
+```
