@@ -11,3 +11,6 @@
 \! pwd
 \! ls -l
 etc.
+
+-- Run a .sql script within psql
+\i /path/to/script.sql
