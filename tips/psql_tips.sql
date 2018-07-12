@@ -6,3 +6,8 @@
 
 -- Change database, once connected to server
 \connect <other_db>
+
+-- Subshell command invocation
+\! pwd
+\! ls -l
+etc.
