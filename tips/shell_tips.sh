@@ -158,6 +158,9 @@ ls -l --block-size=MB <file>
 # Install .deb package
 sudo dpkg -i <.deb>
 
+# Find packages associated with apt-get installation (and their locations)
+dpkg -L <package>
+
 # Search for Ubuntu package
 apt-cache search <keyword>
 
