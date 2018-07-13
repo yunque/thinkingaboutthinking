@@ -69,12 +69,16 @@ SELECT
 	,state_change
 	,query
 	,state
+    ,pid
 FROM
 	pg_stat_activity
 WHERE
 	usename = '<username>'
 	AND
 	datname = '<database>';
+
+-- Cancel a query using process ID
+SELECT pg_cancel_backend(<pid>)
 
 
 -- Create a new user
