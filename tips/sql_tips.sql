@@ -75,4 +75,10 @@ WHERE
 	usename = '<username>'
 	AND
 	datname = '<database>';
-```
+
+
+-- Create a new user
+CREATE USER <uname> WITH PASSWORD <pw>;
+
+-- Give admin inherited role of other user
+GRANT <other_user> TO <admin_role>;
