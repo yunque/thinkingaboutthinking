@@ -171,6 +171,10 @@ tar xvzf <file>.tar.gz
 # z = uncompress
 # f = file
 
+# Compress a directory to .tar.gz
+tar -zcvf archive.tar.gz directory/
+# c = compress
+
 # Unique entries in a CSV column
 cut -d',' -f$X <file>.csv | sort -u
 # (where $X=column index)
@@ -287,9 +291,6 @@ usermod -G <group> <user>
 # Rename a user
 # cf. https://unix.stackexchange.com/a/230426/188678
 groupadd <newuser>
-usermod -d /home/<newuser> -m -g <newuser> -l <newuser> <olduser>
-
-# Set file access control list (user privileges for a file or dir)
 sudo su
 setfacl -m u:<user>:rwx <file/dir>
 
