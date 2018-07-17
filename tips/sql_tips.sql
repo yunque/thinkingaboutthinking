@@ -57,6 +57,10 @@ COPY schema.table TO 'file_name'
 -- NB. In SQL, must be superuser, but not in psql shell
 
 
+-- Import CSV to DB table
+cat data.csv | psql -p ... -U ... -d ... -h ... -c "\copy schema_name.table_name from stdin with csv header;"
+
+
 -- Change table owner
 ALTER TABLE <table> OWNER TO <new_owner>;
 
