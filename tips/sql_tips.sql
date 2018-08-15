@@ -101,3 +101,10 @@ CREATE USER <uname> WITH PASSWORD <pw>;
 
 -- Give admin inherited role of other user
 GRANT <other_user> TO <admin_role>;
+
+-- Show path to DB data directory
+GRANT pg_read_all_settings TO dba;
+SHOW data_directory;
+
+-- See run-time parameters
+SHOW ALL;
