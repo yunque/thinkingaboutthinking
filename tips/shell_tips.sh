@@ -287,10 +287,6 @@ getent group <group>
 
 # Add <user> to <group>
 usermod -G <group> <user>
-
-# Rename a user
-# cf. https://unix.stackexchange.com/a/230426/188678
-groupadd <newuser>
 sudo su
 setfacl -m u:<user>:rwx <file/dir>
 
@@ -302,3 +298,6 @@ lshw
 
 # List files by timestamp (reverse)
 ls -ltr
+
+# Memory free/used
+free -h
