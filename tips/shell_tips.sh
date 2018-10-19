@@ -299,5 +299,6 @@ lshw
 # List files by timestamp (reverse)
 ls -ltr
 
-# Memory free/used
-free -h
+# In a CSV, return the field # which matches a certain string/pattern
+# (helpful if you need to know which field # to send to `cut`)
+awk -F',' ' { for (i = 1; i <= NF; ++i) print i, $i; exit } ' file.csv | grep $pattern
