@@ -302,3 +302,11 @@ ls -ltr
 # In a CSV, return the field # which matches a certain string/pattern
 # (helpful if you need to know which field # to send to `cut`)
 awk -F',' ' { for (i = 1; i <= NF; ++i) print i, $i; exit } ' file.csv | grep $pattern
+# Return only field #, without the matching string
+awk -F',' ' { for (i = 1; i <= NF; ++i) print i, $i; exit } ' file.csv | grep $pattern | cut -d' ' -f1
+# As list without newlines, i.o.t. iterate
+for i in $(awk -F',' ' { for (i = 1; i <= NF; ++i) print i, $i; exit } ' file.csv | grep $pattern | cut -d' ' -f1 | tr '\n' ' '); do
+  # Count distinct values in field
+  echo $i;
+done
+
