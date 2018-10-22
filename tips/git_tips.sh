@@ -173,3 +173,8 @@ git commit --amend
 git fetch --all
 # NB. new branch will not show after `git branch`
 git checkout new_branch
+
+# See which branches have been merged onto the current branch
+git branch --merged
+# ...and which branches have not yet been merged
+git branch --no-merged
