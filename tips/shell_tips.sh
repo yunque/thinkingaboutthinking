@@ -310,3 +310,5 @@ for i in $(awk -F',' ' { for (i = 1; i <= NF; ++i) print i, $i; exit } ' file.cs
   echo $i;
 done
 
+# Change string to lowercase
+echo $string | tr '[A-Z]' '[a-z]'
