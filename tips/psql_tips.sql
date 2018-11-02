@@ -14,3 +14,6 @@ etc.
 
 -- Run a .sql script within psql
 \i /path/to/script.sql
+
+-- Toggle timing
+\timing
