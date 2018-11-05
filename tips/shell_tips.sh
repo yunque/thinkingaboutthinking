@@ -312,3 +312,6 @@ done
 
 # Change string to lowercase
 echo $string | tr '[A-Z]' '[a-z]'
+
+# Check a volume's, and keep the df header
+df -h | grep 'Use\|/mnt/data'
