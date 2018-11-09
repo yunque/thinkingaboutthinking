@@ -178,3 +178,6 @@ git checkout new_branch
 git branch --merged
 # ...and which branches have not yet been merged
 git branch --no-merged
+
+# Compare file across branches
+git diff branch1..branch2 -- file.ext
