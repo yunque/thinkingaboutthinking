@@ -181,3 +181,6 @@ git branch --no-merged
 
 # Compare file across branches
 git diff branch1..branch2 -- file.ext
+
+# See history of changes to a specific line number in a $file
+git log -L110,110:$file
