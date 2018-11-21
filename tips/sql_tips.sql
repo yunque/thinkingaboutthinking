@@ -108,3 +108,6 @@ SHOW data_directory;
 
 -- See run-time parameters
 SHOW ALL;
+
+-- Find table that contains a given column
+SELECT schema_name, table_name FROM all_tab_columns WHERE column_name = 'ID';
