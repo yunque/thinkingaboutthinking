@@ -2,7 +2,7 @@
 import argparse
 
 parser = argparse.ArgumentParser(description='CLI')
-parser.add_argument('--input', '-i', type='str', required=True)
+parser.add_argument('--input', '-i', type=str, required=True)
 args = parser.parse_args()
 print("Input:", args.input)
 
@@ -80,7 +80,7 @@ df["col"].values
 df["col"].index
 
 
-''' Concatenate two DataFrames along the same index '''
+''' Concatenate two DataFrames/Series along the same index '''
 df_both = pd.concat([df_one, df_two], axis=1)
 
 
@@ -108,3 +108,9 @@ df.drop_duplicates(subset='col', keep='first')
 
 # List conda environments
 conda info --envs
+
+# Rotate axis labels
+plt.xticks(rotation=45)
+# Set axis limits
+ax = plt.gca()
+ax.set_xlim([0,1])
