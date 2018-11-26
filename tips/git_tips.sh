@@ -10,6 +10,9 @@ $ git commit
 # Amend commit message (if unpushed)
 git commit --amend
 
+# Remove file from staging area
+git reset $file
+
 # Make a branch (from the master)
 git checkout -b dev/mybranchname
 
