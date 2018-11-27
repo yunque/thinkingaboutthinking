@@ -240,6 +240,9 @@ sed -i.bak '/pattern to match/d' $f
 # Add a header to a file
 sed -i i1'Header,Text' $f
 
+# Remove header from file
+sed -i 1d $f
+
 # Remove carriage return (^M)
 sed -i 's/\r//g' $f
 
