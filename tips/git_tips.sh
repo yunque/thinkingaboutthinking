@@ -36,6 +36,9 @@ git add -p ['hunk' aka line]
 # Diff b/w staging area vs upstream repo
 git diff --cached
 
+# View log of commits not yet pushed upstream
+git log origin/master..master
+
 # Remove .svn files
 find . -iname ".svn" -print0 | xargs -0 rm -r
 #...or...
