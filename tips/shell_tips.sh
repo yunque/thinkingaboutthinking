@@ -318,3 +318,6 @@ echo $string | tr '[A-Z]' '[a-z]'
 
 # Check a volume's, and keep the df header
 df -h | grep 'Use\|/mnt/data'
+
+# See active SSH connections (incl. port forwarding?)
+sudo lsof -i -n | egrep '\<ssh\>'
