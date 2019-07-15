@@ -42,3 +42,5 @@ Ctrl + v
 <<
 # Indent 10 lines
 10>>
+# Comment a visual block (after selecting with Ctrl+V)
+s/^/#
