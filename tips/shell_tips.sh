@@ -288,6 +288,12 @@ groups <user>
 # List all users in <group>
 getent group <group>
 
+# Create <user> with a /home dir (-m) and a default shell (-s)
+useradd -m -s /bin/bash <user>
+
+# Set <user> pw
+passwd <user>
+
 # Add <user> to <group>
 usermod -G <group> <user>
 sudo su
