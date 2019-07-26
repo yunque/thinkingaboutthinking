@@ -330,3 +330,6 @@ sudo lsof -i -n | egrep '\<ssh\>'
 
 # Copy all files/dirs while preserving permissions
 cp -rp /bak/home/user /home/user
+
+# Change name of machine
+hostnamectl set-hostname <new_name>
