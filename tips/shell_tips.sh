@@ -321,3 +321,6 @@ df -h | grep 'Use\|/mnt/data'
 
 # See active SSH connections (incl. port forwarding?)
 sudo lsof -i -n | egrep '\<ssh\>'
+
+# Copy all files/dirs while preserving permissions
+cp -rp /bak/home/user /home/user
