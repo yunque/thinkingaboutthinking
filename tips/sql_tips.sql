@@ -77,6 +77,12 @@ ALTER TABLE <table> OWNER TO <new_owner>;
 
 -- Dump DB from one server to another
 pg_dump -h host1 dbname | psql -h host2 dbname
+					    
+-- Dump DB to file
+pg_dump -h <host> -U <user> -d <database> -Fp -O -x > dump.sql
+
+-- Dump DB to file (only schema with name <schema>
+pg_dump -h <host> -U <user> -d <database> -n <schema> -Fp -O -x > dump.sql
 
 -- Check status of running queries
 SELECT
