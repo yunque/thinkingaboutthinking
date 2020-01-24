@@ -336,3 +336,6 @@ hostnamectl set-hostname <new_name>
 
 # Go to previous directory
 cd -
+
+# Get current wireless network SSID
+iwgetid
