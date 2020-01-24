@@ -333,3 +333,6 @@ cp -rp /bak/home/user /home/user
 
 # Change name of machine
 hostnamectl set-hostname <new_name>
+
+# Go to previous directory
+cd -
