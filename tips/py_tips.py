@@ -114,3 +114,9 @@ plt.xticks(rotation=45)
 # Set axis limits
 ax = plt.gca()
 ax.set_xlim([0,1])
+
+# Define colormap with range of colors
+cmap_range = N
+x = np.linspace(0.0, 1.0, cmap_range)
+cmap = plt.get_cmap('viridis')(x)
+
