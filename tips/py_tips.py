@@ -111,6 +111,8 @@ conda info --envs
 
 # Rotate axis labels
 plt.xticks(rotation=45)
+# Align rotated labels relative to ticks, cf. https://stackoverflow.com/a/14854007/5098023
+plt.xticks(rotation=45, ha='right')
 # Set axis limits
 ax = plt.gca()
 ax.set_xlim([0,1])
