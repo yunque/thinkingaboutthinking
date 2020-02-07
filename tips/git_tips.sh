@@ -23,6 +23,8 @@ git checkout master
 git branch
 # Show all remote branches
 git branch -r
+# Rename branch
+git branch -m $oldname $newname
 
 # Merge branch into master
 git checkout master
