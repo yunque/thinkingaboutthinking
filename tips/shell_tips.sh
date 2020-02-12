@@ -339,3 +339,9 @@ cd -
 
 # Get current wireless network SSID
 iwgetid
+
+# Split a large file into several smaller files
+# e.g. 1000 lines per subfile
+split -l <linecount> <file> <prefix>
+split -l 1000 bigfile smallfile_part_
+# creates subfiles called smallfile_part_a, smallfile_part_b, etc.
