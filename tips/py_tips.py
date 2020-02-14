@@ -63,6 +63,10 @@ for k,v in d.items():
     print(k,v)
 
 
+''' Flatten a list '''
+import itertools
+merged = list(itertools.chain(*list2d))
+
 ''' List files in directory '''
 import os
 print os.listdir(<directory_path>)
