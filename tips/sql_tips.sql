@@ -75,6 +75,9 @@ COPY schema.table TO 'file_name'
 -- Change table owner
 ALTER TABLE <table> OWNER TO <new_owner>;
 
+-- Change schema owner
+ALTER SCHEMA <schema> OWNER TO <new_owner>;
+
 -- Change table owner ('NewOwnerName') for all tables in a schema ('MySchemaName')
 -- NB. this formats text for a set of queries that should then be run separately.
 SELECT format(
