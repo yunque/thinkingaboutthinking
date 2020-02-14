@@ -75,6 +75,17 @@ COPY schema.table TO 'file_name'
 -- Change table owner
 ALTER TABLE <table> OWNER TO <new_owner>;
 
+-- Change table owner ('NewOwnerName') for all tables in a schema ('MySchemaName')
+SELECT format(
+  'ALTER TABLE %I.%I.%I OWNER TO %I;',
+  table_catalog,
+  table_schema,
+  table_name,
+  'NewOwnerName'
+)
+FROM information_schema.tables
+WHERE table_schema = 'MySchemaName';
+
 -- Dump DB from one server to another
 pg_dump -h host1 dbname | psql -h host2 dbname
 					    
