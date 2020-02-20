@@ -1,7 +1,7 @@
 -- Define table schema from a CSV
 head -n100 $csv | csvsql -i postgresql
 
--- Retrieve a table's colums names
+-- Retrieve a table's column names (PostgreSQL)
 SELECT
   column_name
 FROM
@@ -10,6 +10,14 @@ WHERE
   table_schema = 'scheman'
   AND
   table_name   = 'tablen'
+
+-- Retrieve a table's column names (Oracle)
+SELECT
+  column_name
+FROM
+  all_tab_columns
+WHERE
+  table_name = 'tablen'
 
 -- Size of a database
 SELECT pg_size_pretty(pg_database_size('<database>'));
