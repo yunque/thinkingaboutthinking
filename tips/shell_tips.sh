@@ -345,3 +345,6 @@ iwgetid
 split -l <linecount> <file> <prefix>
 split -l 1000 bigfile smallfile_part_
 # creates subfiles called smallfile_part_a, smallfile_part_b, etc.
+
+# [tmux] reset window numbers
+Ctrl+B movew -r
