@@ -177,10 +177,13 @@ git checkout --ours -- <filename>
 # Amend/edit a commit message
 git commit --amend
 
-# Fetch a new branch from upstream
+# Fetch all new branches from upstream
 git fetch --all
 # NB. new branch will not show after `git branch`
 git checkout new_branch
+
+# Fetch a specific new branch from upstream
+git fetch origin $branch_name
 
 # See which branches have been merged onto the current branch
 git branch --merged
