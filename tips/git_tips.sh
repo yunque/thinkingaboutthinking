@@ -38,6 +38,9 @@ git add -p ['hunk' aka line]
 # Diff b/w staging area vs upstream repo
 git diff --cached
 
+# Revert all unstaged changes (e.g. after bad merge)
+git checkout -- .
+
 # View log of commits not yet pushed upstream
 git log origin/master..master
 
