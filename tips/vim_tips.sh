@@ -44,3 +44,11 @@ Ctrl + v
 10>>
 # Comment a visual block (after selecting with Ctrl+V)
 s/^/#
+
+# Write on multiple lines at once
+(cursor at column to insert into)
+Ctrl+V (enter Visual Block mode)
+3j (highlight bottom 3 lines), or arrows
+Shift+i, or capital I
+(enter text)
+Esc Esc (twice)
