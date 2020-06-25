@@ -175,3 +175,14 @@ SELECT
     pg_terminate_backend(pid)
 FROM
     inactive_connections;
+
+
+-- Filter entries before certain date (Oracle)
+SELECT * FROM schema.table
+WHERE
+	datestamp < TO_DATE('2020-06-15 18:30', 'yyyy-MM-dd HH24:MI')
+
+-- Custom ORDER BY (Oracle)
+SELECT * FROM table
+ORDER BY
+	DECODE(column, 'First_value', 1, 'Middle_value', 2, 'Last_value' 3, NULL, 4 )
