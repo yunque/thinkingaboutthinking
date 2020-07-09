@@ -348,3 +348,6 @@ split -l 1000 bigfile smallfile_part_
 
 # [tmux] reset window numbers
 Ctrl+B movew -r
+
+# Open file starting from search term
+less -p'take me here' file.ext
