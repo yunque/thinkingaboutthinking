@@ -63,6 +63,9 @@ for k,v in d.items():
     print(k,v)
 
 
+''' Get dict element, or else return -1 if doesn't exist '''
+d.get('key', -1)
+
 ''' Flatten a list '''
 import itertools
 merged = list(itertools.chain(*list2d))
