@@ -351,3 +351,6 @@ Ctrl+B+: movew -r
 
 # Open file starting from search term
 less -p'take me here' file.ext
+
+# Merge 2 PDFs
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile=merged.pdf f1.pdf f2.pdf
